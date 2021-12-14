@@ -4,7 +4,7 @@ from waitress import serve
 
 app = Flask(__name__)
 
-HOSTNAME = os.etenv('HOSTNAME', 'NO_HOST')
+HOSTNAME = os.getenv('HOSTNAME', 'NO_HOST')
 
 @app.route('/')
 def hello():
